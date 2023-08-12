@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Reservation for Event booking</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <nav data-aos="zoom-in">
+        <ul>
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#Event">Event</a></li>
+          <li><a href="#UpcomingEvents">Upcoming Event</a></li>
+        </ul>
+    
+        <div>
+          <a href="#"><img src="img/cit-logo.png" alt="Logo" height="40"></a>
+          <h5 style="color: #fff; margin: 0; display: inline-block;">केन्द्रीय प्रौद्योगिकी संस्थान कोकराझार
+            <hr>
+            CENTRAL INSTITUTE OF TECHNOLOGY KOKRAJHAR</h5>
+        </div>
+    
+        <div class="search-container">
+          <input type="text" class="search-input" placeholder="Search" id="searchInput">
+          <button class="search-button" onclick="handleSearch()">Search</button>
+        </div>
+        
+      </nav>
+
+      <section id="Home" data-aos="fade-up">
+        <h2 class="section-title">Event Gallery</h2>
+        <div class="photo-grid">
+            <div class="event-photo">
+                <img src="img/photo1.jpg" alt="Event Photo 1">
+                <h3>Ecstasy Annual Cultural Festival</h3>
+                <p>Date: August 10, 2023</p>
+                <p>Location: ABC Hall</p>
+            </div>
+            <div class="event-photo">
+                <img src="img/photo2.jpg" alt="Event Photo 2">
+                <h3>Techcracy Annual Technical Extravaganza</h3>
+                <p>Date: September 5, 2023</p>
+                <p>Location: XYZ Auditorium</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="Event" data-aos="zoom-in">
+  <div class="container">
+    <h1>Student Event Reservation</h1>
+    <form id="reservation-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name">
+      <span class="error" id="name-error"></span>
+
+      <label for="grade">Grade:</label>
+      <input type="text" id="grade" name="grade" placeholder="Enter your grade">
+      <span class="error" id="grade-error"></span>
+
+      <label for="guests">Number of Guests:</label>
+      <input type="number" id="guests" name="guests" placeholder="Enter number of guests">
+      <span class="error" id="guests-error"></span>
+
+      <label for="event-date">Event Date:</label>
+      <input type="date" id="event-date" name="event-date">
+      <span class="error" id="date-error"></span>
+
+      <input type="submit" value="Register">
+    </form>
+  </div>
+</section>
+
+
+<section id="Reservations" data-aos="zoom-in">
+  <h2>Reservations</h2>
+  <ul id="reservationList"></ul>
+  <p>Total Students Reserved: <span id="totalStudents">0</span></p>
+  <p>Total Guests Reserved: <span id="totalGuests">0</span></p>
+</section>
+
+
+    <section id="UpcomingEvents" data-aos="zoom-in">
+        <h2 class="section-title">Upcoming Events</h2>
+        <div class="upcoming-event">
+            <h3>Techcracy Annual Technical Extravaganza</h3>
+            <p>Date: August 10, 2023</p>
+            <p>Location: ABC Hall</p>
+            <p><B>Techcracy</B> is the annual technical festival of Central Institute of Technology Kokrajhar which is organized every year. The festival promises to be a perfect fusion of innovative ideas and enthusiasm. Extending one's limit out of boundary one can express themselves. Starting from competiton to workshops it includes many more events. Youth get a chance to motivate themselves through lecture series by high voltage appearences across India.
+                <br>
+                Discover yourself through literary events and with worldclass photoghrapy in photography challenge. Bring out your concept in the form of hilarious models in model display competition like Jouga and Alayaron etc.
+<br>http://techcracy.cit.ac.in/
+            </p>
+        </div>
+        <div class="upcoming-event">
+            <h3>Ecstasy Annual Cultural Festival</h3>
+            <p>Date: September 5, 2023</p>
+            <p>Location: XYZ Auditorium</p>
+            <p><B>Ecstasy</B> is the annual cultural fest of Central Institute of Technology, Kokrajhar, Assam. Being one of the largest cultural fest in entire lower Assam which witnessed various national and international artists. Spread over 3 days and 3 nights, Every year it is conducted at the end of February.
+                Ecstasy has over 40 competitions. Some of them are voice of Ecstasy, Mr & Miss Ecstasy, The bridal competitions is another beauty pageant competition of Ecstasy. Ecstasy attracts people from all over the nation with its spectecular events and competitions. The coming edition of Ecstasy is strives to be greatest till date. It is scheduled to be held from 21st Feb to 23rd Feb 2019. Thank you.
+                <br>http://ecstasy.cit.ac.in</p>
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
