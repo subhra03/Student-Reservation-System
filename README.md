@@ -1,1 +1,1 @@
-# Student-Reservation-System
+The Student Reservation System project aims to create a web-based application using HTML, CSS, and JavaScript to facilitate the reservation process for students in educational institutions. The system will provide students with a user-friendly interface to reserve facilities or services offered by the institution.
